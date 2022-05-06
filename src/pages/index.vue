@@ -3,13 +3,14 @@
 </style>
 
 <template>
-  <div class="index">asd</div>
+  <div class="index">
+    
+  </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    console.log(333);  
-  },
-};
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  
+});
 </script>
