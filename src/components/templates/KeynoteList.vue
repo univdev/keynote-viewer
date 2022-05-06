@@ -25,6 +25,9 @@
         <molecule-keynote-card />
       </v-col>
     </v-row>
+    <organism-keynote-upload-form-dialog
+      :visible.sync="isVisibleKeynoteUploadForm"
+    />
     <molecule-keynote-add-button
       v-if="visibleAddKeynoteButton"
       class="keynote-add-button"
@@ -50,8 +53,14 @@ export default Vue.extend({
       default: () => [],
     },
   },
+  data() {
+    return {
+      isVisibleKeynoteUploadForm: false,
+    };
+  },
   methods: {
     onClickAddKeynoteButton(e: MouseEvent) {
+      this.isVisibleKeynoteUploadForm = true;
       this.$emit('click:add-keynote', e);
     },
   },

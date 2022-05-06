@@ -23,5 +23,5 @@
     ]
   },
   "exclude": ["node_modules", ".nuxt", "dist"],
-  "include": ["./src/types/vue-shim.d.ts", "./src/types/*"],
+  "include": ["./src/types/*.d.ts"],
 }
