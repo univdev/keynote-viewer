@@ -1,19 +1,68 @@
-# 📽 고급진 스터디를 위한 키노트 뷰어
-## 개요
-보다 나은 프론트엔드 개발자가 되기 위해 일주일에 한 번 씩 스터디를 개최하고 있어요!  
-그런데 말로 하는 설명보다는 **시각적으로 보여지는 설명이 동반**된다면 이해가 쉽겠죠?
+# keynote-viewer
 
-그렇기에 제 주특기인 ```keynote```를 이용하기로 했어요. 🎉
+## Build Setup
 
-우리는 스터디를 할 때 **Google Meet**을 사용해요.
-**Google Meet**을 이용할 때 ```Keynote```를 사용하려면 아래와 같은 방식으로 사용을 해요.
-- 발표자가 화면 공유를 켜서 ```Keynote```를 보여준다.
-- 발표한다.
+```bash
+# install dependencies
+$ yarn install
 
-그런데 이 문제점은 아래와 같은 문제점을 야기해요.
-- 발표가 끝나면 별도의 메모나 녹화를 해둔게 아니라면 어떤 발표가 오갔는지 알 수 없다.
-- **Keynote**를 공유하지 않았다면 추후에 다시 열람하는게 불가능하다.
-- **Keynote** 파일 공유 절차를 굳이 거쳐야한다.
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-그렇기에 언제든지 접속해서 **Keynote**를 열람할 수 있도록 하고 싶었어요. (발표 스크립트는 덤이구요)  
-이걸 이용해서 보다 **스마트한 스터디**가 가능하길 바라요!
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+## Special Directories
+
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+
+### `assets`
+
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+
+### `components`
+
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+
+### `layouts`
+
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+
+### `pages`
+
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+
+### `plugins`
+
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+
+### `static`
+
+This directory contains your static files. Each file inside this directory is mapped to `/`.
+
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+
+### `store`
+
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
