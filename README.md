@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+# 📽 고급진 스터디를 위한 키노트 뷰어
+## 개요
+보다 나은 프론트엔드 개발자가 되기 위해 일주일에 한 번 씩 스터디를 개최하고 있어요!  
+그런데 말로 하는 설명보다는 **시각적으로 보여지는 설명이 동반**된다면 이해가 쉽겠죠?
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+그렇기에 제 주특기인 ```keynote```를 이용하기로 했어요. 🎉
 
-## Setup
+우리는 스터디를 할 때 **Google Meet**을 사용해요.
+**Google Meet**을 이용할 때 ```Keynote```를 사용하려면 아래와 같은 방식으로 사용을 해요.
+- 발표자가 화면 공유를 켜서 ```Keynote```를 보여준다.
+- 발표한다.
 
-Make sure to install the dependencies:
+그런데 이 문제점은 아래와 같은 문제점을 야기해요.
+- 발표가 끝나면 별도의 메모나 녹화를 해둔게 아니라면 어떤 발표가 오갔는지 알 수 없다.
+- **Keynote**를 공유하지 않았다면 추후에 다시 열람하는게 불가능하다.
+- **Keynote** 파일 공유 절차를 굳이 거쳐야한다.
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+그렇기에 언제든지 접속해서 **Keynote**를 열람할 수 있도록 하고 싶었어요. (발표 스크립트는 덤이구요)  
+이걸 이용해서 보다 **스마트한 스터디**가 가능하길 바라요!
