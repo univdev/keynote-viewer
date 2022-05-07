@@ -1,7 +1,3 @@
-<style lang="less" scoped>
-
-</style>
-
 <template>
   <v-btn
     v-bind="{ ...$attrs, ...$props }"
@@ -39,8 +35,9 @@ export default Vue.extend({
   },
   methods: {
     onClick() {
+      const { value } = this;
       this.$emit('click');
-      this.$emit('input', this.value === 'light' ? 'dark' : 'light');
+      this.$emit('input', value === 'light' ? 'dark' : 'light');
     },
   },
 });
