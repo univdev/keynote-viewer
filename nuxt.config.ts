@@ -1,4 +1,6 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
+import type { Locale } from './src/types/locale';
+import messages from './lang';
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -44,7 +46,20 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: [
+      { name: '한국어', code: 'ko', iso: 'ko-KR', file: './src/lang/ko.ts', dir: 'ltr' },
+      { name: 'English', code: 'en', iso: 'en-US', file: './src/lang/en.ts', dir: 'ltr' },
+    ] as Locale[],
+    defaultLocale: 'ko',
+    vueI18n: {
+      fallbackLocale: 'ko',
+      messages,
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

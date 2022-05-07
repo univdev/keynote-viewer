@@ -20,6 +20,7 @@
       "@nuxtjs/axios",
       "@types/node",
       "@nuxtjs/vuetify",
+      "@nuxtjs/i18n",
     ]
   },
   "exclude": ["node_modules", ".nuxt", "dist"],
