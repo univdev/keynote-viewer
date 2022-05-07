@@ -1,19 +1,20 @@
 export default {
   global: {
-    title: 'Luxury',
+    title: 'Luxury Study',
     locale: {
-      placeholder: '언어',
+      placeholder: 'Languages',
     },
   },
   pages: {
     home: {
-      title: '키노트 리스트',
+      title: 'List of Keynotes',
       form: {
+        label: 'Upload',
         keynote: {
-          placeholder: '키노트 파일을 업로드해주세요',
+          placeholder: 'Please upload your keynote.',
         },
         title: {
-          placeholder: '제목',
+          placeholder: 'Title',
         },
       },
     },

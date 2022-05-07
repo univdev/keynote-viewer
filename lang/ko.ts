@@ -9,6 +9,7 @@ export default {
     home: {
       title: '키노트 리스트',
       form: {
+        label: '키노트 업로더',
         keynote: {
           placeholder: '키노트 파일을 업로드해주세요',
         },

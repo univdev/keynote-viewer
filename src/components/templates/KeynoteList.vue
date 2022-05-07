@@ -27,6 +27,9 @@
     </v-row>
     <organism-keynote-upload-form-dialog
       :visible.sync="isVisibleKeynoteUploadForm"
+      :label="$t('pages.home.form.label')"
+      :title-placeholder="$t('pages.home.form.title.placeholder')"
+      :keynote-placeholder="$t('pages.home.form.keynote.placeholder')"
     />
     <molecule-keynote-add-button
       v-if="visibleAddKeynoteButton"

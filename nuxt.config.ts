@@ -5,7 +5,7 @@ import messages from './lang';
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s : 스터디 키노트 뷰어',
+    titleTemplate: '고급진 스터디 : %s',
     title: '키노트 리스트',
     htmlAttrs: {
       lang: 'ko',

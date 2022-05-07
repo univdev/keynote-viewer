@@ -76,7 +76,7 @@ export default Vue.extend({
       this.setTheme(theme);
     },
     onUpdateLocale(locale: string) {
-      this.switchLocalePath(locale);
+      this.$router.push({ path: this.switchLocalePath(locale) });
     },
   },
 });

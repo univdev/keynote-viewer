@@ -7,7 +7,7 @@
   >
     <v-card>
       <v-card-title>
-        {{ title }}
+        {{ label }}
         <v-spacer />
         <v-btn
           color="error"
@@ -19,6 +19,10 @@
       <v-card-text>
         <molecule-keynote-upload-form
           ref="editor"
+          :keynote-placeholder="keynotePlaceholder"
+          :multiple="keynoteMultiple"
+          :title="title"
+          :title-placeholder="titlePlaceholder"
         />
       </v-card-text>
       <v-card-actions>
@@ -53,10 +57,35 @@ export default Vue.extend({
       required: false,
       default: false,
     },
-    title: {
+    label: {
       type: String,
       required: false,
       default: '키노트 업로드',
+    },
+    title: {
+      type: String,
+      required: false,
+      default: null,
+    },
+    titlePlaceholder: {
+      type: String,
+      required: false,
+      default: '제목',
+    },
+    keynotes: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+    keynotePlaceholder: {
+      type: String,
+      required: false,
+      default: '키노트를 업로드 해주세요',
+    },
+    keynoteMultiple: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
   computed: {

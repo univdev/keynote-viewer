@@ -22,5 +22,6 @@ module.exports = {
         component: 'always',
       },
     }],
+    'vue/multi-word-component-names': 'off',
   },
 }

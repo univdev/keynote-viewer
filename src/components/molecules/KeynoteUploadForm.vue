@@ -3,9 +3,9 @@
     ref="form"
   >
     <v-file-input
-      :value="files"
-      :placeholder="filePlaceholder"
-      :multiple="fileMultiple"
+      :value="keynotes"
+      :placeholder="keynotePlaceholder"
+      :multiple="keynoteMultiple"
       @input="onInput('files', $event)"
     />
     <v-text-field
@@ -21,17 +21,17 @@ import Vue from 'vue';
 
 export default Vue.extend({
   props: {
-    files: {
+    keynotes: {
       type: Array,
       required: false,
       default: () => [],
     },
-    filePlaceholder: {
+    keynotePlaceholder: {
       type: String,
       required: false,
       default: '키노트 파일을 업로드 해주세요',
     },
-    fileMultiple: {
+    keynoteMultiple: {
       type: Boolean,
       required: false,
       default: false,
