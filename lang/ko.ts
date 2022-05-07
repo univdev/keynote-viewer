@@ -1,6 +1,6 @@
 export default {
   global: {
-    title: '고급진',
+    title: '고급진 스터디',
     locale: {
       placeholder: '언어',
     },
