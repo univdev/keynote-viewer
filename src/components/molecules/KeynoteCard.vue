@@ -10,6 +10,11 @@
     <v-card-title>
       {{ title }}
     </v-card-title>
+    <v-card-text
+      class="text-right"
+    >
+      {{ author }}
+    </v-card-text>
   </v-card>
 </template>
 
@@ -27,6 +32,11 @@ export default Vue.extend({
       type: String,
       required: false,
       default: '제목',
+    },
+    author: {
+      type: String,
+      required: false,
+      default: '작성자',
     },
   },
 });

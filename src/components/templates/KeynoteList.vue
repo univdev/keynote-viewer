@@ -22,7 +22,11 @@
         :md="6"
         :sm="12"
       >
-        <molecule-keynote-card />
+        <molecule-keynote-card
+          :thumbnail="item.thumbnail"
+          :title="item.title"
+          :author="item.author"
+        />
       </v-col>
     </v-row>
     <organism-keynote-upload-form-dialog
